@@ -18,3 +18,4 @@ answers = inquirer.prompt(questions)
 choice = int(answers['size'])
 print(choice)
 print(answers.values(), type)
+ 
