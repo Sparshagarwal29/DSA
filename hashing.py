@@ -1,4 +1,4 @@
-# def hashing(n , m ):
+# def hashing(n , m ): #by using list 
 #     hash_list = [0] *11
 #     for num in n: 
 #         hash_list[num] +=1
@@ -8,7 +8,9 @@
 #         else:
 #             print( hash_list[num])
 #     return hash_list        
-def hashing(n,m):
+
+
+def hashing(n,m): #by useing Dictionary
     hash_map ={}
     for num in n:
         hash_map[num] = hash_map.get(num,0) +1
