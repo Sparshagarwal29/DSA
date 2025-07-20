@@ -8,6 +8,8 @@ def palindrom(s):
             count +=1 
         else:
             break
+        left +=1
+        right -=1
     if(count == len(s)):
         print("is palindrom")  
     else:
