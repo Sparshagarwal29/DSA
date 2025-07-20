@@ -50,8 +50,11 @@
 import math
 
 def countNumbers(n):
+    if n< 36:
+        return 0 
     c = 0
-    limit = int(math.sqrt(n))
+    limit = int(math.sqrt(n)) +1
+    is_prime = [True] * (limit)
 
     prime = [i for i in range(limit + 1)]
 
