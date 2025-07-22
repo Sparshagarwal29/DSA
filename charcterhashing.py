@@ -1,5 +1,6 @@
 s = "azssihghhzzzzzzaio"
-q = ["a","s","h","z"]
+# q = ["a","s","h","z"]
+q="ashz"
 def charcterhash(s ,q):
     hash_list =[0]*26
     for ch in s:

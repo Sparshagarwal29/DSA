@@ -10,7 +10,7 @@
 #     return hash_list        
 
 
-def hashing(n,m): #by useing Dictionary
+def hashing(n,m): #by useing Dictionary -- .get is verry important 
     hash_map ={}
     for num in n:
         hash_map[num] = hash_map.get(num,0) +1
