@@ -17,19 +17,7 @@ print(moveZero(nums))
 
 
 # optimal soln -->
-# method -1 
-def leftZero(nums):
-    non_zero_pos = 0
-    
-    for i in range(len(nums)):
-        if nums[i] != 0:
-            nums[non_zero_pos], nums[i] = nums[i], nums[non_zero_pos]
-            non_zero_pos += 1
-    
-    return nums
-nums = [1, 0, 2, 4, 3, 0, 0, 3, 5, 1]
-print(leftZero(nums))
-# method 2 
+# method 1
 def zeroShift(nums):
     i =0
     if len(nums)== 1:
@@ -47,5 +35,5 @@ def zeroShift(nums):
             i +=1
         j +=1
     return nums
-print(zeroShift(nums=[1, 0, 2, 4, 3, 0, 0, 3, 5, 1]))
+print(zeroShift(nums=[1, 0]))
 
