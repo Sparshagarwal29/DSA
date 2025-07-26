@@ -20,11 +20,9 @@ def twoSum(nums,target):
     prevMap = {}  # val -> index
 
     for i, n in enumerate(nums):
+        print(n)
         diff = target - n
         if diff in prevMap:
-            x = prevMap[diff]
-            print(x + 1)
-            print(i+1)
             return [prevMap[diff], i]
         prevMap[n] = i
         
