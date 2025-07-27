@@ -1,3 +1,5 @@
+# this is the optimal soln ---> t(n) ==O(N) , s = o(1)
+
 def maxprofit(nums):
     n = len(nums)
     max_profit = 0
