@@ -1,3 +1,4 @@
+# optimal soln ----> t(n) = N*M s(n) = N+M  ==={N= no of rows , M = number of colms }
 def setZeroes(matrix):
     rows_to_zero = set()
     cols_to_zero = set()
