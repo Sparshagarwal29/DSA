@@ -7,12 +7,12 @@ def search(nums,target):
         if nums[mid] == target:
             return mid 
         if nums[mid]<=nums[high]: # this can suggest me that right side is sorted
-            if target >nums[mid] and target <= nums[high]:
+            if target >nums[mid] and target <= nums[high]:#  nums[mid]< target <= nums[high] 
                 low = mid +1
             else:
                 high = mid -1
         else:
-            if target < nums[mid]  and target >= nums[low]:
+            if target < nums[mid]  and target >= nums[low]: # nums[low] =< target < nums[mid]
                 high = mid -1
             else:
                 low = mid +1            
