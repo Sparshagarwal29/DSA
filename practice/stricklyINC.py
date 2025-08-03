@@ -7,16 +7,18 @@ def check(nums):
         return False
     if n < 4:
         return False
-    while i < n and nums[i] > nums[i+1]:
+    while i < n and nums[i] > nums[i-1]:
         i +=1
     if i== 1 or i == n:
         return False
-    while i < n and nums[i] < nums[i+1]:
+    while i < n and nums[i] < nums[i-1]:
         i +=1
     if i== 1 or i == n:
         return False
-    while i < n and nums[i] > nums[i+1]:
+    while i < n and nums[i] > nums[i-1]:
         i +=1
     if i== 1:
         return False
     return i == n
+
+print(check(nums=[1,3,5,4,2,6,8]))
