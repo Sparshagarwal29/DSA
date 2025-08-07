@@ -4,18 +4,37 @@ class Node:
         self.val = val
         self.next: Optional[Node] = None
 
-node1 = Node(5)
-node2 = Node(10)
-node3 = Node(15)
-node4 = Node(20)
-node5 = Node(25)
+class singlyLinkedList:
+    def __init__(self):
+      self.head = None
+    def append(self,val):
+        new_node = Node(val)
+        if self.head == None:
+            self.head = new_node
+        else:
+            curr = self.head
+            while curr.next is not None:
+                curr = curr.next
+            curr.next = new_node
+    def traverse(self):
+        if self.head is None:
+            print("empty linked list ")
+        else:
+            curr = self.head
+            while curr is not None:
+                print(curr.val,end=" ")
+                curr = curr.next
+            print()
+    # def insertAtPosition():
 
 
-node2.next = node3
-node1.next = node2 
-node3.next = node4
-node4.next = node5
+sll = singlyLinkedList()
+sll.append(5)
+sll.append(10)
+sll.append(15)
+sll.append(25)
+sll.traverse()
 
 
-print(node1.val)
-print(node1.next.val) 
+
+
