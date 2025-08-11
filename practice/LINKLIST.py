@@ -25,7 +25,44 @@ class singlyLinkedList:
                 print(curr.val,end=" ")
                 curr = curr.next
             print()
-    # def insertAtPosition():
+    def insertAtPosition(self,val,positon):
+        new_node = Node(val)
+        if positon == 0 :
+            new_node.next = self.head
+            self.head = new_node
+        else:
+            current = self.head
+            prev_node = None
+            count = 0
+            while current is not None and count < positon:
+                prev_node = current
+                current = current.next
+                count +=1
+            prev_node.next = new_node # type: ignore
+            new_node.next = current
+    def deleteNode(self,val):
+        temp = self.head
+        if temp.next is not None: # type: ignore
+            if temp.val == val: # type: ignore
+                self.head == temp.next # type: ignore
+                return
+            else:
+                found = False
+                prev = None
+                while temp is not None:
+                    if temp.val == val:
+                        found = True
+                        break
+                    prev = temp
+                    temp = temp.next
+                if found:
+                    prev.next = temp.next # type: ignore
+                    return
+                else:
+                    print("node not found")
+
+
+
 
 
 sll = singlyLinkedList()
