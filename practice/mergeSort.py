@@ -21,16 +21,16 @@ def sotarr(left , right): #a function when given two "sorted array" merge them i
             j +=1
     return result        
 
-def mergsot(arr): #with the hel[p of recursion we are Aable to do this program 
+def mergsort(arr): #with the hel[p of recursion we are Aable to do this program 
     if len(arr) <= 1:
         return arr
     mid = len(arr) // 2
     left_arr = arr[: mid]
     right_arr= arr[mid :]
-    left = mergsot(left_arr)
-    right = mergsot(right_arr)
+    left = mergsort(left_arr)
+    right = mergsort(right_arr)
     return sotarr(left, right)
 
-# time complexity === t(n) =O(log2N) log with base 2 
+# time complexity === t(n) =O(n log N) log with base 2 
 
-print(mergsot(arr=[3,4,2,8,6,1,9,2,0,11,5,7,1,2]))
+print(mergsort(arr=[3,4,2,8,6,1,9,2,0,11,5,7,1,2]))
