@@ -94,8 +94,8 @@ class doublyLinkedList:
         print()
     def traverse_backword(self):
         curr = self.head
-        while curr.next:
-            curr = curr.next
+        while curr.next: # type: ignore
+            curr = curr.next  # type: ignore
         while curr:
             print(curr.val) 
             curr = curr.prev
