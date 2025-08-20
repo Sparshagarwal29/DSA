@@ -46,4 +46,59 @@ class doublyLinkedList:
             if curr.next:
                 curr.next.prev = new_node
             curr.next = new_node # type: ignore
-        
+
+    def DeleteAtbegining(self):
+        if self.head is None:
+            print("empty List")
+        elif self.head.next is None:
+            self.head = None
+            return
+        else:
+            self.head.next.prev = None 
+            self.head = self.head.next
+    def DeleteAtEnd(self):
+        if self.head == None:
+            print("empty")
+        elif self.head.next == None:
+            self.head = None
+            return
+        else:
+            temp = self.head
+            while temp.next.next is not None: # type: ignore
+                temp = temp.next # type: ignore
+            temp.next.prev = None # type: ignore
+            temp.next = None   # type: ignore
+    def deleteSpecificVal(self,val):
+        if self.head is None:
+            print("empty")
+        if self.head.val == val:   # type: ignore
+            if self.head.next is None:   # type: ignore
+                self.head = None
+            else:  
+                self.head.next.prev = None  # type: ignore
+                self.head = self.head.next  # type: ignore
+            return
+        temp = self.head.next  # type: ignore
+        while temp is not None:
+            if temp.val == val:
+                temp.prev.next = temp.next 
+                if temp.next is not None:
+                    temp.next.prev = temp.prev
+                return
+            temp = temp.next 
+    def traverse_forward(self):
+        curr = self.head
+        while curr:
+            print(curr.val, end=" ")
+            curr = curr.next
+        print()
+    def traverse_backword(self):
+        curr = self.head
+        while curr.next:
+            curr = curr.next
+        while curr:
+            print(curr.val) 
+            curr = curr.prev
+        print()
+                
+
