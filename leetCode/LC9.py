@@ -1,3 +1,9 @@
+# check wheather the numeber is palindrom or not 
+#  a plaindrom number is  number is same while reversing it 
+
+
+
+
 def isPalindrome(x: int) :
 
     number_str = str(x)

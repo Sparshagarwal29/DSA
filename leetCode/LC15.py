@@ -1,3 +1,7 @@
+# 3sum we have to return triplet [nums[i], nums[j], nums[k]] such that such that i != j , i!=k , j != k and num[i] + nums[j] + nums[k] = 0 
+
+
+
 # brute force soln -- t(n) = O(N^3)
 def sum(nums):
     n = len(nums)

@@ -2,6 +2,22 @@
 #  [3,4,5,6]---- target is 7 so we need to find two number whoes sum would be 7 , assumeing their are only one pair as such
 
 
+def twosum(num: list, target: int ):
+    n = len(num)
+    for i in range(n):
+        for j in range(i+1,n):
+            if ((num[i]+num[j]) == target):
+                return (i,j)
+    return []
+
+
+
+
+
+
+
+
+
 # brute force soln :----
 # def twoSum(num : list, target : int):
 #     for i in range(len(num)):

@@ -1,3 +1,7 @@
+# we have to reverse the given integer but it should not go out of the singnal 32 bit integer ==>{[-231, 231 - 1]}
+
+
+
 def reverse( x: int):
     rev = 0 
     int_min= -2**31

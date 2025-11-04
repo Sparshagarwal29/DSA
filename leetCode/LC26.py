@@ -1,3 +1,7 @@
+# if the number is repeating remove that number 
+
+
+
 def removeDuplicates(nums):
     n = len(nums)
     i = 0 
@@ -10,3 +14,6 @@ def removeDuplicates(nums):
             nums[i] = nums[j]    
         j +=1    
     return i + 1
+
+nums = [0,0,1,1,1,2,2,3,3,4]
+removeDuplicates(nums)

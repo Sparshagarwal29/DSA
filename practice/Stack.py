@@ -20,3 +20,4 @@ class Stack:
         return len(self.iteam)
 
 Stacke = Stack()  
+print(Stacke)
