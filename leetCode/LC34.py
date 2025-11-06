@@ -1,3 +1,7 @@
+# 
+
+
+
 def brute(nums,target):
     first= -1
     last = -1
@@ -8,7 +12,8 @@ def brute(nums,target):
             last = i
     return[first,last]
 
-# print(brute(nums = [5,7,7,8,8,10],target=8))
+print(brute(nums = [5,7,7,8,8,8,10],target=8))
+
 
 
 def findFirst(nums,target):

@@ -1,3 +1,6 @@
+# we print the middle list element to the last element of the list . if their are two middle element choose the second one 
+
+
 class ListNode_o:
     def __init__(self, val=0, next=None):
         self.val = val

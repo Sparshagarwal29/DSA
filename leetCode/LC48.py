@@ -1,3 +1,7 @@
+# in place rotation of the matrix n * n 
+
+
+
 # time complexity is O(N^2)
 def rotate(matrix):
     n = len(matrix)

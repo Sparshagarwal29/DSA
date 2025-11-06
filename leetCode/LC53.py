@@ -1,3 +1,6 @@
+# subarray with the largest sum 
+
+
 # t(N) = n(n -1) /2 == O(n^2)  and space = O(1)
 def maxSubarr(nums):
     n = len(nums)
@@ -9,7 +12,6 @@ def maxSubarr(nums):
             if sub > max_sub:
                 max_sub = sub
     return max_sub
-
 
 nums = [-2,1,-3,4,-1,2,1,-5,4]
 print(maxSubarr(nums))

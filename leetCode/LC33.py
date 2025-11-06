@@ -1,3 +1,7 @@
+# a array which is sorted then possibly left roted at an unknow index  we have to find the target 
+#  left roteted of array  [0,1,2,4,5,6,7] by index 3 would be : [4,5,6,7,0,1,2]
+
+
 def search(nums,target):
     n = len(nums)
     low = 0 

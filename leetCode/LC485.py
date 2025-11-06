@@ -1,3 +1,5 @@
+# count the maximum number of grouped one's 
+
 def maxOne(nums):
     count= 0 
     max_count = 0
