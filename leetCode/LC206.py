@@ -1,3 +1,6 @@
+# we have to print the reverse of the list 
+
+
 from typing import Optional
 class Node:
     def __init__(self,val):
@@ -13,3 +16,4 @@ def reverseLinkedList(self,head):
         prev = curr
         curr = front
     return prev
+

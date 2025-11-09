@@ -8,4 +8,16 @@ def count(nums):
         hashmap[i]= hashmap.get(i, 0) +1
     return False
 
+
+
+# method - 2  by using hashmap 
+def count_2(nums):
+    seen = set()
+    for num in nums:
+        if num  in seen:
+            return True
+        seen.add(num)
+    return False
+
+
 print(count(nums=[1,2,3]))    

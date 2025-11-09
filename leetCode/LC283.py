@@ -1,3 +1,6 @@
+# move zero to the last of the list and the order of the other element should be maninted 
+
+
 # brute force soln on how to moke zero to the left side wityhout changing the order of the zon zero element 
 # t(n) == o(N) and s(n)  is also o(N)
 def moveZero(nums):

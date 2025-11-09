@@ -1,4 +1,4 @@
-# two string need to check wheather  the element of the second string exists in first string 
+# two string need to check wheather  the element of the second string exists in first string -->  is an anagram of s
 def isAnagram(s,t):
     if len(s) != len(t):
         return False
@@ -11,6 +11,10 @@ def isAnagram(s,t):
     if hashMap1 == hashMap:
         return True 
     
+
+from collections import Counter # Counter does the same works as hashmap but its just inbuild fuction of python nothind to loop and code 
+def isAnagram_optimal(s,t):
+    return Counter(s) == Counter(t)
 
 
 print(isAnagram(s="rat",t="car"))
