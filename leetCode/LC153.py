@@ -1,3 +1,6 @@
+# we have to return the mininum elemet in the array which is rotated in any form 
+
+
 def findMin(self, nums):
     target = float("inf")
     n = len(nums)
