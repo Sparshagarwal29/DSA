@@ -1,3 +1,6 @@
+# we have to print the length of consective sequence it can be arranged in any format in the 
+
+
 # brute force soln ---> t(n) = o(N^2) ---> TEL error 
 def longConsecutive(nums):
         n = len(nums)
