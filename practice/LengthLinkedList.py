@@ -39,6 +39,5 @@ class SolutionOPP:
                 while slow != fast:
                     slow = slow.next 
                     count +=1 
-
         return None
     
