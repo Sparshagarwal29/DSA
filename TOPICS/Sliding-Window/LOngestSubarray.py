@@ -11,9 +11,9 @@ length = len(arr)
 k = 14 
 
 for i in range(length):
-    sum = 0 
+    carr_sum = 0 
     for j in range(i,length):
-        sum += arr[i]
-        if sum <= k:
-            max_length = max(max_length, j-i-1 ) 
+        carr_sum += arr[j]
+        if carr_sum <= k:
+            max_length = max(max_length, j-i+1 ) 
 print (max_length)
