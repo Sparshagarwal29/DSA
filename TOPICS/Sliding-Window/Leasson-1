@@ -1,0 +1,5 @@
+Sliding window :
+4 pattern --> 1. constant window 
+              2. Longest substring / subarray were <condistion >
+              3. No. of subarray were <condition>  {these are solved with pattern 2 } 
+              4. finding the shortest window were  <condition>.
