@@ -1,4 +1,4 @@
-# Brute force approach
+# Brute force approach  -- O(n^2) time complexity
 class Solution:
     def maxScore(self, cardPoints, k) :
         lSum = 0 
@@ -14,6 +14,12 @@ class Solution:
                 lSum += cardPoints[i] 
         return mSum
 # better soln
+class Solution2:
+    def maxScore(self, cardPoints, k) :
+        lSum = 0 
+        mSum = 0 
+        n = len(cardPoints)
+
 
 
         
