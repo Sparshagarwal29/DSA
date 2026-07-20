@@ -3,7 +3,6 @@
 #     * * * *
 #     * * * *
 #     * * * *
-
 def pattern1(rows, cols):
     for i in range(0,rows):
         for j in range(0,cols):
@@ -11,7 +10,6 @@ def pattern1(rows, cols):
         print(  )
         
 # TC ==> O(N^2) 
-
 pattern1(4,4)
 
 
@@ -26,13 +24,13 @@ pattern1(4,4)
 #    ****
 #    *****
 
-def pattern3(row):
+def pattern2(row):
     for i in range(0,row):
         for j in range(0,i):
             print("*", end =" ")
         print( )
 
-pattern3(6)
+pattern2(6)
 
 
 # Pattern 3
@@ -75,7 +73,15 @@ pattern4(6)
 # patten 5 
 
 #    * * * * *
-# 
-# 
-# 
-# 
+#    * * * * 
+#    * * * 
+#    * * 
+#    * 
+
+def pattern5(rows):
+    for i in range(rows):
+        for j in range(rows-i+1):
+            print("*", end =" ")
+        print(  )
+
+pattern5(5)
