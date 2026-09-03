@@ -214,8 +214,9 @@ def pattern10(rows):
         print()
         
 
-
 pattern10(5)
+
+print("\n\n")
 
 # pattern 11 
 
@@ -227,13 +228,21 @@ pattern10(5)
 
 def pattern11(rows):
     for i in range(rows):
-        for j in range():
+        start = 1
+        if i % 2 == 0:
+            start = 1
+        else:
+            start = 0 
+        for j in range(i+1):
+            print(start, end=" ")
+            start = 1 - start
+        print()
 
 
 pattern11(5)
 
 
-
+print("\n\n")
 
 # pattern 12 
 
@@ -243,6 +252,22 @@ pattern11(5)
 #  1 2 3 4 4 3 2 1 
 
 
+def pattern12(rows):
+    for i in range(rows):
+        for j in range(1,i+2):
+            print(j,end=" ")
+        space = 2 *(rows-i-1)
+        for j in range(space):
+            print(" ",end=" ")
+        for j in range(i+1,0,-1):
+            print(j,end=" ")
+        print( )
+
+pattern12(5)
+
+print("\n\n")
+
+
 # pattern 13.
 
 # 1 
@@ -250,6 +275,19 @@ pattern11(5)
 # 4 5 6
 # 7 8 9 10 
 # 11 12 13 14 15 
+
+def pattern13(rows):
+    num = 1
+    for i in range(1,rows+1):
+        for j in range(i):
+            print(num, end=" ")
+            num +=1
+        print()
+
+
+pattern13(5)
+
+
 
 
 #  pattern 14
@@ -261,33 +299,15 @@ pattern11(5)
 # A B C D
 # A B C D E 
 
-
-#  PATTERN 15 
-
-# A B C D E 
-# A B C D
-# A B C 
-# A B
-# A 
+def pattern14(rows):
+    for i in range(rows):
+        for j in range(i+1):
+            print(chr(65+j), end="")
+        print()
 
 
-# pattern 16 
-# A 
-# BB 
-# CCC
-# DDDD
-# EEEEE
+pattern14(5)
 
-# pattern 17 
-#     A
-#    ABA
-#   ABCBA
-#  ABCDCBA
 
-# pattern 18
+print("\n\n")
 
-# E
-# D E
-# C D E
-# B C D E
-# A B C D E
