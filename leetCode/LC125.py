@@ -17,3 +17,22 @@ def isPalindrome(s):
 print(isPalindrome(s="A man, a plan, a canal: Panama"))
 
 # isalnum -- check wheather all the character are alphanumeric, that menas they are either A-Z or a-z or 0-9 return true if they else false 
+
+
+
+
+class soln:
+    def ispalindrom(self,s):
+        left = 0 
+        right = len(s) -1 
+        while left < right:
+            if not s[left].isalnum():
+                left +=1
+            elif not s[right].isalnum():
+                right -=1
+            else:
+                if s[left] != s[right]:
+                    return False
+                left +=1 
+                right -=1 
+            return True
